@@ -54,8 +54,8 @@ Para rodar este projeto, você precisará ter instalado na sua máquina:
 ## ⚙️ Como Executar
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/SeuUsuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   git clone https://github.com/marcelofiquene/contoso-analytics-engineering
+   cd contoso-analytics-engineering
    ```
 
 2. Instale as dependências:
