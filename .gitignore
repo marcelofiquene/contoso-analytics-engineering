@@ -1,0 +1,27 @@
+# Ambientes Virtuais Python
+venv/
+.venv/
+__pycache__/
+
+# Dados Locais e Banco de Dados (Arquivos pesados)
+data/raw/*
+data/database/*
+*.parquet
+*.duckdb
+*.db
+
+# Garantir a inclusao de estrutura de pastas no Git
+!data/raw/.gitkeep
+!data/database/.gitkeep
+
+# Credenciais, Segredos e Configuraçoes
+.env
+secrets.toml
+.dlt/config.toml
+.dlt/secrets.toml
+
+# System & IDE
+.vscode/
+.idea/
+.DS_Store
+*.log
