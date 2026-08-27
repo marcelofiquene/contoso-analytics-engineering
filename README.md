@@ -18,7 +18,7 @@ O fluxo de dados foi desenhado focando em eficiência, qualidade de dados e esca
 | Etapa | Estágio / Camada | Descrição do Processo | Ferramenta / Tech | Status / Progresso |
 | :---: | :--- | :--- | :---: | :---: |
 | **01** | **Fonte de Dados Externa** | Múltiplos arquivos estáticos Parquet contendo a base relacional Contoso (~10M de linhas no total). | Arquivos Parquet | `[██████████]` 100% |
-| **02** | **Ingestão e Leitura (dlt)** | Leitura em lote (batch) dos arquivos Parquet via Python + dlt, validação e inferência automática de schema. | Python / dlt | `[░░░░░░░░░░]` 0% |
+| **02** | **Ingestão e Leitura (dlt)** | Leitura em lote (batch) dos arquivos Parquet via Python + dlt, validação e inferência automática de schema. | Python / dlt | `[██████████]` 100% |
 | **03** | **Camada Bronze (Raw)** | Gravação física das tabelas brutas no DuckDB mantendo o histórico e a estrutura original do dado. | DuckDB | `[░░░░░░░░░░]` 0% |
 | **04** | **Camada Silver (Cleaned)** | Limpeza, padronização, tipagem de dados, deduplicação e testes de Data Quality com `dbt`. | dbt + DuckDB | `[░░░░░░░░░░]` 0% |
 | **05** | **Camada Gold (Analytics)** | Modelagem dimensional (Fato/Dimensão), criação de agregados, métricas e KPIs do negócio. | dbt + DuckDB | `[░░░░░░░░░░]` 0% |
